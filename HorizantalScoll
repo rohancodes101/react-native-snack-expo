@@ -4,8 +4,12 @@ import { View, Text, StyleSheet, ScrollView } from 'react-native';
 const HorizantalScroll = () => {
   return (
     <View style={styles.headText}>
-      <Text>PlainCards here</Text>
+      <Text style={{paddingHorizontal:120}}>Scrollable here</Text>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+        {/* There is Flatlist vs ScollView Which is same as  Recycleview vs List 
+        React Native === ANdroid
+        Scrollview === ListView
+        FlatList  ===  RecycleView(LazyLoading) */}
         <View style={[styles.justCard, styles.cardOne]}>
           <Text style={{ color: 'white' }}>Rohan</Text>
         </View>
